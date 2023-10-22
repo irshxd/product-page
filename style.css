@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.display{
+    display: flex;
+    height: 102vh;
+    background-color: #B9D9EB;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: #72A0C1;
+    width: 50%;
+    height: 40%;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card img{
+    width: 40%;
+    height: 100%;
+    border-radius: 24px 0 0 24px;
+
+}
+.card-details{
+    background-color: 72A0C1;
+    display: flex;
+    /* justify-content: center; */
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 5%;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.card-details p{
+    font-size: 1.7rem;
+    font-family:  'Montserrat', 'ariel';
+
+}
+
+h4{
+    font-size: 1.2rem;
+    font-family:  'Montserrat', 'ariel';;
+}
+.pricediv{
+    display: flex;
+
+}
+h1{
+    font-family: 'Fraunces', serif;
+    text-decoration: underline;
+}
+span{
+    width: 100px;
+    height: 50px;
+ 
+    /* background-color: blue; */
+}
+.price{
+    font-size: 2.6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #13274F;
+    font-family: 'Fraunces', serif;
+}
+.price2{
+    font-size: 1.7rem;
+    text-decoration: line-through;
+    padding-top: 12px;
+}
+.btn{
+    width: 80%;
+    height: 60px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #13274F;
+    color: white;
+    font-size: larger;
+}
+.btn p{
+    padding-left: 20px;
+    font-size: large;
+}
+.btn i{
+    font-size: large;
+}
+
+@media (max-width:480px){
+    .card{
+    display: flex;
+  width: 80%;
+  flex-direction: column;
+  height: 700px;
+        
+    }
+    .card img{
+        width: 100%;
+        height: 39%;
+        border-radius:24px 24px 0 0  ;
+    }
+    .card-details{
+        width: 100%;
+        padding-top: 8px;
+    }
+    .card-details p{
+        font-size: 1.2rem;
+        
+    }
+    .head{
+        font-size: 1.9rem;
+        text-decoration: none;
+    }
+    .head4{
+        font-size: 0.9rem;
+    }
+    span{
+        font-size: 0.5rem;
+    }
+    .btn{
+        margin-left: 10px;
+        width: 90%;
+    }
+}
+@media (max-height:500px){
+    h4{
+        display: none;
+    }
+    .card-details{
+        padding-top: 10px;
+    }
+    .card-details p{
+        font-size:1.3rem;
+        
+    }
+    .head{
+        font-size: 25px;
+    }
+}
